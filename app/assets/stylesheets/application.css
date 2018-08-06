@@ -1,0 +1,15 @@
+body{
+	background-color:#ECF0F1 !important;
+}
+table{
+  margin: auto;
+  border-collapse: collapse;
+}
+td{
+	text-align: center;
+    border: 1px solid black;
+   padding: 15px 50px; 
+}
+th{
+  background-color: #F39C12  ;
+}

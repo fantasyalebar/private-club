@@ -1,0 +1,27 @@
+<div class="container">
+<h1>Sign Up</h1>
+
+<%= form_for @user do |f|%>
+	<div class="form-group">
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name, placeholder: "first_name", class: "form-control bboard"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name, placeholder: "last_name", class: "form-control bboard"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :email %>
+		<%= f.text_field :email, type: "email", placeholder: "exp@email.com", class: "form-control bboard"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.submit class: "btn btn-info btn-default", value: "Sign Up" %>
+	</div>
+
+	<p>Vous avez déjà un compte? <%= link_to "Connectez-vous!", login_path %></p>
+<% end %>
+</div>
+

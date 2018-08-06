@@ -1,0 +1,16 @@
+<div class="container">
+
+<h1>Membre du club</h1>
+
+<% @users.each do |user| %>
+	<table>
+		<tr>
+			<td><%= user.first_name %></td>
+			<td><%= user.last_name %></td>
+			<td><%= user.email %></td>
+			<td><a href="<%= user_path(user.id)%>" target="_blank">Voire le profil</a></td>
+		</tr>
+	</table>
+<% end %>
+
+</div>
